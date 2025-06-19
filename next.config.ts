@@ -13,7 +13,6 @@ const nextConfig: NextConfig = {
           { hostname: 'img.clerk.com'}
       ]
   },
-  turbopack: {},
 };
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
