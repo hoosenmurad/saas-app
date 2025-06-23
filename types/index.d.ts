@@ -15,6 +15,13 @@ enum Subject {
   economics = "economics",
   finance = "finance",
   business = "business",
+  psychology = "psychology",
+  philosophy = "philosophy",
+  sociology = "sociology",
+  politics = "politics",
+  art = "art",
+  music = "music",
+  
 }
 
 type Companion = Models.DocumentList<Models.Document> & {
