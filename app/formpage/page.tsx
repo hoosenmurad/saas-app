@@ -5,7 +5,7 @@ import {newCompanionPermissions} from "@/lib/actions/companion.actions";
 import Image from "next/image";
 import Link from "next/link";
 
-const NewCompanion = async () => {
+const NewInterview = async () => {
     const { userId } = await auth();
     if(!userId) redirect('/sign-in');
 
@@ -36,4 +36,4 @@ const NewCompanion = async () => {
     )
 }
 
-export default NewCompanion
+export default NewInterview;
