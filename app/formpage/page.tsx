@@ -1,4 +1,4 @@
-import CompanionForm from "@/components/CompanionForm";
+import CreateForm from "@/components/CreateForm";
 import {auth} from "@clerk/nextjs/server";
 import {redirect} from "next/navigation";
 import {newCompanionPermissions} from "@/lib/actions/companion.actions";
@@ -15,9 +15,9 @@ const NewCompanion = async () => {
         <main className="min-lg:w-1/3 min-md:w-2/3 items-center justify-center">
             {canCreateCompanion ? (
                 <article className="w-full gap-4 flex flex-col">
-                    <h1>Companion Builder</h1>
+                    <h1>Create something special</h1>
 
-                    <CompanionForm />
+                    <CreateForm />
                 </article>
                 ) : (
                     <article className="companion-limit">

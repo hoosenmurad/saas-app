@@ -32,7 +32,7 @@ const formSchema = z.object({
     duration: z.coerce.number().min(1, { message: 'This field is required.'}),
 })
 
-const CompanionForm = () => {
+const CreateForm = () => {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -194,4 +194,4 @@ const CompanionForm = () => {
     )
 }
 
-export default CompanionForm
+export default CreateForm
