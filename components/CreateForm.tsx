@@ -23,8 +23,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { Badge } from "@/components/ui/badge"
-import { X } from "lucide-react"
+import { Badge, X } from "lucide-react"
 
 const formSchema = z.object({
   type: z.string().min(1, { message: "This field is required." }),
@@ -204,7 +203,6 @@ const CreateForm = () => {
                     {form.watch("specialtySkills").map((skill, i) => (
                       <Badge
                         key={i}
-                        variant="secondary"
                         className="flex items-center gap-1"
                       >
                         {skill}
